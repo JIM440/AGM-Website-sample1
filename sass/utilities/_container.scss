@@ -1,0 +1,9 @@
+.container{
+    margin: 0px;
+    margin-inline: auto;
+    width: 90%;
+    overflow: auto;
+    max-width: 1200px;
+    width: min(90%, 1100px);
+    padding-block: 15px;
+}

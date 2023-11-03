@@ -1,0 +1,157 @@
+nav{
+    position: fixed; 
+    padding: 0 1rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+box-shadow: $box-shadow;
+
+    .container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i{
+font-size: 24px;
+color: $black;
+font-weight: bold;
+cursor: pointer;
+    }
+
+    
+
+.mobile-nav{
+    box-shadow: $box-shadow;
+    display: flex;
+    background-color: $white;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    width: 500px;
+    max-width: 100%;
+    padding: 20px;
+    height: 100vh;
+
+&>div:first-of-type{
+        font-weight: 600;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        i{
+            font-size: 30px;
+        }
+    }
+.bi-x{
+            margin-right: 1.4rem;
+        }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2rem;
+
+        
+
+        a{
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            font-size: 18px;
+            color: $black;
+            margin: 0 auto;
+            max-width: 200px;
+            transition: 0.4s ease;
+
+            &:hover{
+                color: $primary-color;
+
+                i{
+                    color: $primary-color;
+                }
+            }
+
+            i{
+                font-size: 20px;
+            }
+        }
+
+
+        .btn{
+            text-align: center;
+            color: $white;
+            justify-content: center;
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+
+    hr{
+        margin-block: 10px;
+        margin-top: 0px;
+    }
+
+    .icons-container{
+margin-top: 2rem;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.mobile-nav.active{
+    right: 0px;
+}
+
+    .desktop-nav{
+        display: none;
+
+        ul{
+            display: flex;
+            gap: 2.4rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+
+            a{
+                color: $black;
+                font-weight: 500;
+                transition: 0.4s ease;
+                font-size: 18px;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            .btn{
+                color: $white;
+
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    @include breakpointDynamic(1040px){
+        .bi-list{
+            display: none;
+        }
+        .mobile-nav{
+            display: none;
+            right: -200%;
+        }
+        .desktop-nav{
+            display: flex;
+        }
+    }
+    }
+}
