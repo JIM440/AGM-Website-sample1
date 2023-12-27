@@ -1,0 +1,28 @@
+//utility classes
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;    
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+button{
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: $text-muted;
+}
