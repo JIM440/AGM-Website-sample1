@@ -31,16 +31,6 @@
     <nav>
       <div class="container">
         <div class="logo">AGM</div>
-        <div class="desktop-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="ministry.html">Ministry</a></li>
-            <li><a href="partner.html">Partner</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="" class="btn">Donate</a></li>
-          </ul>
-        </div>
         <div class="menu-button">
           <span></span>
           <span></span>
@@ -51,16 +41,8 @@
 
     <!-- hero section -->
     <section id="hero" class="hero-2-cols">
-      <div class="container">
-        <div class="big-image">
-          <img src="" alt="" />
-        </div>
-        <div class="small-image-container">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
+      <div class="big-image">
+        <img src="" alt="" />
       </div>
     </section>
 
@@ -359,7 +341,7 @@
       <div class="container">
         <h2 class="header">Featured Products</h2>
         <div class="product-container">
-          <div class="product-box">
+          <div class="product-box book-card">
             <img src="" alt="" />
             <p><span>The Horn Of Favor</span> by Prophet Kevin Nubidga</p>
             <div>
@@ -367,7 +349,7 @@
               <button class="btn">Order Now</button>
             </div>
           </div>
-          <div class="product-box">
+          <div class="product-box book-card">
             <img src="" alt="" />
             <p><span>The Horn Of Favor</span> by Prophet Kevin Nubidga</p>
             <div>
@@ -375,7 +357,7 @@
               <button class="btn">Order Now</button>
             </div>
           </div>
-          <div class="product-box">
+          <div class="product-box book-card">
             <img src="" alt="" />
             <p><span>The Horn Of Favor</span> by Prophet Kevin Nubidga</p>
             <div>
@@ -383,7 +365,7 @@
               <button class="btn">Order Now</button>
             </div>
           </div>
-          <div class="product-box">
+          <div class="product-box book-card">
             <img src="" alt="" />
             <p><span>The Horn Of Favor</span> by Prophet Kevin Nubidga</p>
             <div>
@@ -397,8 +379,9 @@
     <!-- ======featured videos======= -->
     <section id="featured-videos">
       <div class="container">
+        <h2 class="header">Featured Videos</h2>
+
         <div class="video-container">
-          <h2 class="header">Featured Videos</h2>
           <div class="videos">
             <!-- give .videos max-width and margin auto  -->
             <div class="video-card">
@@ -537,7 +520,7 @@
             <div class="subscribe">
               <div>
                 <img src="" alt="" />
-                <h3>Prophet Kevin Online</h3>
+                <h2>Prophet Kevin Online</h2>
               </div>
               <div class="btns">
                 <a href="" class="btn fb">
@@ -548,10 +531,7 @@
                   <p>Share On Facebook</p>
                 </a>
                 <a href="" class="btn yt">
-                  <img
-                    src="public/assets/images/YouTube.svg"
-                    alt="youtube link"
-                  />
+                  <i class="bi bi-youtube"></i>
                   <p>Subscribe</p>
                 </a>
               </div>
@@ -611,7 +591,7 @@
         <div class="faqs-container">
           <div class="faqs">
             <div class="question">
-              <h3>Question tag goes here</h3>
+              <h3>Who are we?</h3>
               <i class="bi bi-chevron-down"></i>
             </div>
             <p class="answer">
@@ -622,7 +602,7 @@
           </div>
           <div class="faqs">
             <div class="question">
-              <h3>Question tag goes here</h3>
+              <h3>How can I give to AGM?</h3>
               <i class="bi bi-chevron-down"></i>
             </div>
             <p class="answer">
@@ -633,7 +613,7 @@
           </div>
           <div class="faqs">
             <div class="question">
-              <h3>Question tag goes here</h3>
+              <h3>How can I become a partner?</h3>
               <i class="bi bi-chevron-down"></i>
             </div>
             <p class="answer">
@@ -644,7 +624,7 @@
           </div>
           <div class="faqs">
             <div class="question">
-              <h3>Question tag goes here</h3>
+              <h3>How can I get help?</h3>
               <i class="bi bi-chevron-down"></i>
             </div>
             <p class="answer">
@@ -667,24 +647,27 @@
       <div class="container">
         <div class="footer-grid-container">
           <div class="footer-grid-box">
-            <div class="logo"><p>AGM</p></div>
-            <div class="news-letter">
-              <p>Subscribe To Our Newsletter</p>
-              <form action="">
+            <div class="logo">
+              <img src="assets/product-image/logo.png" alt="" />
+            </div>
+            <form action="" class="flex-col">
+              <h3>Subscribe To Our Newsletter</h3>
+              <div class="form-group">
                 <input
                   type="email"
                   name="email"
-                  id="email"
-                  placeholder="Enter Your Email"
+                  placeholder="Enter your email"
+                  id="newsletter-email"
+                  required
                 />
-                <button type="submit" class="btn">Send</button>
-              </form>
-            </div>
-            <div class="icon-container">
+                <button type="submit" class="btn">Subscribe</button>
+              </div>
+            </form>
+            <div class="social-links">
               <a href=""><i class="bi bi-facebook"></i></a>
               <a href=""><i class="bi bi-youtube"></i></a>
               <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
 
