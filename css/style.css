@@ -14,6 +14,7 @@
 img {
   max-width: 100%;
   vertical-align: middle;
+  vertical-align: middle;
 }
 
 button {
@@ -391,15 +392,32 @@ nav .container .menu-button span {
   margin-top: 3rem;
 }
 #hero .big-image {
-  background-color: brown;
-  border: 1px solid #877B7B;
-  height: 500px;
   max-width: 1440px;
   margin: 0 auto;
+}
+#hero .big-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+#hero .big-image img.desktop {
+  display: none;
+}
+@media (min-width: 700px) {
+  #hero .big-image img.mobile {
+    display: none;
+  }
+  #hero .big-image img.desktop {
+    display: initial;
+  }
 }
 
 #intro .even-columns {
   gap: 1rem;
+}
+#intro .even-columns img {
+  width: 100%;
+  max-width: none;
 }
 @media (min-width: 700px) {
   #intro .even-columns {
@@ -543,6 +561,7 @@ nav .container .menu-button span {
 #testimonies .container .testimony-container .testimony-box div > img {
   width: 60px;
   height: 60px;
+  object-fit: cover;
   border-radius: 50%;
   background-color: #802EC0;
 }
@@ -562,14 +581,12 @@ nav .container .menu-button span {
   flex-wrap: wrap;
 }
 #featured-products .product-container .product-box {
-  padding: 10px;
   max-width: 350px;
   display: flex;
   flex-shrink: 1;
   flex: 1 1 250px;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid #877B7B;
   border-radius: 8px;
 }
 #featured-products .product-container .product-box p > span {
@@ -584,8 +601,6 @@ nav .container .menu-button span {
   width: 100%;
   min-width: 150px;
   min-height: 150px;
-  border-radius: 8px;
-  background-color: #877B7B;
 }
 
 #featured-videos .container .video-container {
@@ -607,22 +622,13 @@ nav .container .menu-button span {
   gap: 1rem;
   max-width: 650px;
 }
-#featured-videos .container .video-container .videos .video-card {
-  border: 1px solid #877B7B;
-  border-radius: 8px;
-  padding: 10px;
-}
-#featured-videos .container .video-container .videos .video-card video {
-  min-height: 250px;
-  width: 100%;
-}
 #featured-videos .container .video-container .videos .video-card iframe {
   width: 100%;
+  height: 100%;
+  min-height: 250px;
 }
 #featured-videos .container .video-container .videos .video-card div:first-of-type {
   width: 100%;
-  border: 1px solid #877B7B;
-  border-radius: 8px;
   margin-bottom: 10px;
 }
 #featured-videos .container .video-container .videos .video-card .video-title {
@@ -665,6 +671,12 @@ nav .container .menu-button span {
   padding: 10px;
   border-radius: 8px;
 }
+#featured-videos .container .video-container .side-news > div h3 {
+  font-weight: 500;
+}
+#featured-videos .container .video-container .side-news > div p {
+  font-size: 14px;
+}
 #featured-videos .container .video-container .side-news .side-news-card {
   display: flex;
   gap: 1.2rem;
@@ -675,10 +687,9 @@ nav .container .menu-button span {
   align-items: start;
 }
 #featured-videos .container .video-container .side-news .side-news-card img {
-  width: 100px;
-  min-width: 70px;
+  object-fit: cover;
+  width: 200px;
   height: 100px;
-  background-color: #877B7B;
 }
 #featured-videos .container .video-container .side-news .side-news-card .btn {
   margin-top: 1rem;
@@ -719,12 +730,12 @@ nav .container .menu-button span {
   gap: 1rem;
 }
 #featured-videos .container .video-container .side-news .subscribe > div:first-of-type img {
-  width: 40%;
+  width: 100%;
   height: 100px;
-  max-width: 150px;
+  max-width: 100px;
 }
-#featured-videos .container .video-container .side-news .subscribe > div:first-of-type h2 {
-  width: 60%;
+#featured-videos .container .video-container .side-news .subscribe > div:first-of-type h3 {
+  width: 100%;
 }
 #featured-videos .container .video-container .side-news .subscribe .btns {
   display: flex;
@@ -734,19 +745,26 @@ nav .container .menu-button span {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 4px 10px;
 }
 #featured-videos .container .video-container .side-news .subscribe .btns .yt {
   background-color: #FF3D00;
 }
+#featured-videos .container .video-container .side-news .subscribe .btns .yt i {
+  font-size: 20px;
+}
 #featured-videos .container .video-container .side-news .subscribe .btns .fb {
   background-color: #3F51B5;
+}
+#featured-videos .container .video-container .side-news .subscribe .btns .fb img {
+  width: 28px;
+  height: 28px;
 }
 
 #faqs-section .container-faqs-section {
   max-width: 800px;
 }
 #faqs-section .container-faqs-section .faqs-container {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -763,6 +781,9 @@ nav .container .menu-button span {
 #faqs-section .container-faqs-section .faqs-container .faqs .question {
   display: flex;
   justify-content: space-between;
+}
+#faqs-section .container-faqs-section .faqs-container .faqs .question h3 {
+  font-weight: 500;
 }
 #faqs-section .container-faqs-section .faqs-container .faqs .question.active i {
   rotate: 180deg;
