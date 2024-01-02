@@ -27,6 +27,10 @@ hr {
   background-color: #877B7B;
 }
 
+textarea {
+  resize: none;
+}
+
 .icon-container, .icons-container {
   display: flex;
   gap: 1rem;
@@ -129,6 +133,7 @@ nav {
   width: 100%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(128, 46, 192, 0.4);
+  z-index: 4;
 }
 nav .container {
   display: flex;
@@ -388,6 +393,77 @@ nav .container .menu-button span {
   background-color: black;
 }
 
+#mandates .container .mandate-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#mandates .container .mandate-container .mandate-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  position: relative;
+}
+#mandates .container .mandate-container .mandate-box img {
+  width: 100%;
+  height: 150px;
+  background-color: #877B7B;
+}
+#mandates .container .mandate-container .mandate-box .mandate-name {
+  position: absolute;
+  top: 108px;
+  left: 10px;
+  padding: 6px;
+  color: white;
+}
+#mandates .container .mandate-container .blue {
+  background-color: royalblue;
+}
+#mandates .container .mandate-container .yellow {
+  background-color: rgba(255, 217, 0, 0.852);
+}
+#mandates .container .mandate-container .purple {
+  background-color: purple;
+}
+#mandates .container .mandate-container .green {
+  background-color: green;
+}
+
+#social-container .container {
+  margin-top: 70px;
+}
+#social-container .container > div {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+#social-container .container > div a {
+  display: flex;
+  padding: 4px 10px;
+  border-radius: 8px;
+  gap: 6px;
+  align-items: center;
+}
+#social-container .container > div a i {
+  font-size: 24px;
+  color: white;
+}
+#social-container .container > div a:first-of-type {
+  background-color: #3F51B5;
+  color: white;
+}
+#social-container .container > div a:nth-child(2) {
+  background-color: #FF3D00;
+  color: white;
+}
+#social-container .container > div a:last-of-type {
+  background-color: #e65f78;
+  color: white;
+}
+
 #hero {
   margin-top: 3rem;
 }
@@ -622,6 +698,9 @@ nav .container .menu-button span {
   gap: 1rem;
   max-width: 650px;
 }
+#featured-videos .container .video-container .videos .header {
+  margin-top: 2rem;
+}
 #featured-videos .container .video-container .videos .video-card iframe {
   width: 100%;
   height: 100%;
@@ -764,6 +843,9 @@ nav .container .menu-button span {
 #faqs-section .container-faqs-section {
   max-width: 800px;
 }
+#faqs-section .container-faqs-section .header {
+  margin-bottom: 2rem;
+}
 #faqs-section .container-faqs-section .faqs-container {
   display: flex;
   flex-direction: column;
@@ -816,4 +898,119 @@ nav .container .menu-button span {
 }
 #faqs-section .container-faqs-section .more-questions h3 {
   font-size: 1.6rem;
+}
+
+#contact-form .container {
+  margin-top: 50px;
+}
+#contact-form .container .nav-links {
+  padding-block: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#contact-form .container .nav-links a {
+  color: #877B7B;
+}
+#contact-form .container .nav-links a:hover {
+  color: #802EC0;
+}
+#contact-form .container .nav-links a.active {
+  color: #802EC0;
+  font-weight: 700;
+}
+#contact-form .container .form-container {
+  padding: 10px;
+  border: 1px solid #b8b0b0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact-form .container .form-container h2 {
+  font-weight: 600;
+  color: #802EC0;
+}
+#contact-form .container .form-container p {
+  font-size: 14px;
+}
+#contact-form .container .form-container .asterisk span {
+  color: red;
+  font-size: 2rem;
+}
+#contact-form .container .form-container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+#contact-form .container .form-container form .form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact-form .container .form-container form .form-element label::after {
+  content: "*";
+  margin-left: 10px;
+  visibility: hidden;
+  font-size: 1.6rem;
+}
+#contact-form .container .form-container form .form-element label:not(.not-required)::after {
+  content: "*";
+  margin-left: 10px;
+  color: red;
+  font-size: 1.6rem;
+  visibility: visible;
+}
+#contact-form .container .form-container form .form-element input,
+#contact-form .container .form-container form .form-element textarea {
+  width: 100;
+  border: 1px solid #b8b0b0;
+  border-radius: 4px;
+  padding: 10px;
+}
+#contact-form .container .form-container form .form-element textarea {
+  height: 100px;
+}
+@media (min-width: 700px) {
+  #contact-form .container .form-container form {
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact-form .container .form-container form .form-element.message {
+    grid-column: span 2;
+  }
+}
+
+#contact-info .container .even-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+#contact-info .container .even-columns .even-column-img iframe {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 200px;
+}
+#contact-info .container .even-columns > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact-info .container .even-columns > div > div {
+  display: flex;
+  gap: 1rem;
+}
+#contact-info .container .even-columns .links {
+  gap: 10px;
+  justify-content: center;
+}
+#contact-info .container .even-columns .links i {
+  color: black;
+  font-size: 1.2rem;
+}
+@media (min-width: 700px) {
+  #contact-info .container .even-columns {
+    grid-template-columns: 1fr 1fr;
+  }
 }
