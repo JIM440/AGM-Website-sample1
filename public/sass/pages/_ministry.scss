@@ -1,0 +1,38 @@
+#social-container{
+    .container{
+        margin-top:70px;
+
+        &>div{
+            display: flex;
+            gap: 1.2rem;                align-items: center;
+            justify-content: center;
+
+
+            a{
+                display: flex;
+                padding: 4px 10px;
+                border-radius: 8px;
+                gap: 6px;
+                align-items: center;
+
+                i{
+                    font-size: 24px;
+                    color: $white;
+                }
+            }
+
+            a:first-of-type{
+                background-color: $fb-color;
+                color: $white;
+            }
+            a:nth-child(2){
+                background-color: $yt-color;
+                color: $white;
+            }
+            a:last-of-type{
+                background-color: $ig-color2;
+                color: $white;
+            }
+        }
+    }
+}

@@ -7,6 +7,7 @@ nav {
   width: 100%;
   background-color: $white;
   box-shadow: $box-shadow;
+  z-index: 4;
 
   .container {
     display: flex;
@@ -52,50 +53,12 @@ nav {
       display: block;
       transition: 0.6s;
     }
-
-    .desktop-nav {
-      display: none;
-
-      ul {
-        display: flex;
-        gap: 2.4rem;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-
-        a {
-          color: $black;
-          font-weight: 500;
-          transition: 0.4s ease;
-          font-size: 18px;
-
-          &:hover {
-            color: $primary-color;
-          }
-        }
-        .btn {
-          color: $white;
-
-          &:hover {
-            color: $white;
-          }
-        }
-      }
-    }
-
-    @include breakpointDynamic(1040px) {
-      .desktop-nav {
-        display: flex;
-      }
-      .menu-button {
-        display: none;
-      }
-    }
   }
 }
 
 
 .mobile-nav {
+  max-width: 1200px;
     display: flex;
     background-color: $white;
     flex-direction: column;
@@ -112,6 +75,7 @@ nav {
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+
 
     ul {
       display: flex;
@@ -207,7 +171,13 @@ nav {
   }
   @include breakpointDynamic(1040px) {
     .mobile-nav {
-      display: none;
       right: -200%;
     }
+}
+
+
+@include breakpointDynamic(600px){
+  .mobile-nav{
+    padding: 40px;
+  }
 }

@@ -35,28 +35,43 @@
                     font-size: 22px;
                     font-weight: 600;
                 }
-                .news-letter{
-                    p{
-                        text-transform: capitalize;
-                        font-weight: 500;
-                    }
-                    form{
-                        display: grid;
-                        align-items: center;
-                        grid-template-columns: 4fr 1fr;
-                        width: 100%;
-                        max-width: 400px;
 
-                            button{
-                                border-radius: 0px;
-                            }
+                .form-group {
+                    display: flex;
+                    gap: 0px;
+                    height: fit-content;
+                    max-width: 300px;
+                    margin-top: 10px;
+                  }
+                 .form-group input {
+                    padding: 6px;
+                    border-top-left-radius: 6px;
+                    color: $black;
+                    border-bottom-left-radius: 6px;
+                    font-size: 14px;
+                  }
+                 .form-group button {
+                    padding: 6px;
+                    border-radius: 0px;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    font-size: 14px;
+                    margin: 0;
+                  }
+                  .social-links {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    width: fit-content;
+                    margin: auto;
+                  }
+                  .social-links i {
+                    font-size: 24px;
+                  }
+                 .social-links i:hover {
+                    transition: 0s;
+                  }
 
-                        input{
-                            padding: 10px 10px;
-                            height: fit-content;
-                        }
-                    }
-                }
                 a{
                     color: $black;
 
