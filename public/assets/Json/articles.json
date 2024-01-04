@@ -1,0 +1,74 @@
+{
+    "visions": [
+      {
+        "id": 1,
+        "title": "Title of Vision 1",
+        "picture": "vision1.jpg",
+        "content": "Content of Vision 1",
+        "date": "2024-01-01",
+        "category": "visions"
+      },
+      {
+        "id": 2,
+        "title": "Title of Vision 2",
+        "picture": "vision2.jpg",
+        "content": "Content of Vision 2",
+        "date": "2024-01-02",
+        "category": "visions"
+      }
+    ],
+    "qna": [
+      {
+        "id": 3,
+        "title": "Title of Q&A 1",
+        "picture": "qna1.jpg",
+        "content": "Content of Q&A 1",
+        "date": "2024-01-03",
+        "category": "qna"
+      },
+      {
+        "id": 4,
+        "title": "Title of Q&A 2",
+        "picture": "qna2.jpg",
+        "content": "Content of Q&A 2",
+        "date": "2024-01-04",
+        "category": "qna"
+      }
+    ],
+    "prophetic-revelation": [
+      {
+        "id": 5,
+        "title": "Title of Prophecy 1",
+        "picture": "prophecy1.jpg",
+        "content": "Content of Prophecy 1",
+        "date": "2024-01-05",
+        "category": "prophecies"
+      },
+      {
+        "id": 6,
+        "title": "Title of Prophecy 2",
+        "picture": "prophecy2.jpg",
+        "content": "Content of Prophecy 2",
+        "date": "2024-01-06",
+        "category": "prophecies"
+      }
+    ],
+    "counsel": [
+        {
+          "id": 5,
+          "title": "Title of Prophecy 1",
+          "picture": "prophecy1.jpg",
+          "content": "Content of Prophecy 1",
+          "date": "2024-01-05",
+          "category": "prophecies"
+        },
+        {
+          "id": 6,
+          "title": "Title of Prophecy 2",
+          "picture": "prophecy2.jpg",
+          "content": "Content of Prophecy 2",
+          "date": "2024-01-06",
+          "category": "prophecies"
+        }
+      ]
+  }

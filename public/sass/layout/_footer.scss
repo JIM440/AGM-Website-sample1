@@ -32,9 +32,23 @@
                 }
 
                 .logo{
-                    font-size: 22px;
-                    font-weight: 600;
-                }
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
+                    max-width: 300px;
+                    img{
+                      width: 70px;
+                  }
+                  p{
+                    font-size: 14px;
+                    color: $black;
+                  }
+                  h2{
+                    font-size: 18px;
+                    color: darken($color: $primary-color, $amount: 20%);
+                    font-weight: 700;
+                  }
+                  }
 
                 .form-group {
                     display: flex;

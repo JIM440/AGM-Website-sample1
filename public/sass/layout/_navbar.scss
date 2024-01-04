@@ -1,6 +1,5 @@
 nav {
   position: fixed;
-  padding: 0 1rem;
   top: 0;
   right: 0;
   left: 0;
@@ -13,7 +12,41 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 1rem;
+    padding-block: 0.6rem;
+
+    .logo{
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      max-width: 300px;
+      img{
+        width: 60px;
+    }
+    p{
+      font-size: 10px;
+      color: $text-muted;
+    }
+    h2{
+      font-size: 18px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+  @include breakpointDynamic(560px){
+    .logo{
+      max-width: 400px;
+
+      p{
+        font-size: 14px;
+      }
+      h2{
+        font-size: 24px;
+      }
+      img{
+width: 80px;
+      }
+    }
+  }
 
     i {
       font-size: 24px;
