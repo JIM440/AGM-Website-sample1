@@ -11,13 +11,16 @@
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
-  vertical-align: middle;
 }
 
-button {
+a, button {
   cursor: pointer;
 }
 
@@ -35,6 +38,11 @@ section {
   margin-bottom: 1.4rem;
 }
 
+@media (min-width: 810px) {
+  section {
+    margin-bottom: 4rem;
+  }
+}
 .icon-container, .icons-container {
   display: flex;
   gap: 1rem;
@@ -538,7 +546,7 @@ nav .container .menu-button span {
 }
 
 #hero {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 #hero .hero-image {
   max-width: 1440px;
@@ -561,6 +569,11 @@ nav .container .menu-button span {
   }
 }
 
+@media (min-width: 700px) {
+  #hero {
+    margin-top: 6.2rem;
+  }
+}
 #intro .even-columns {
   gap: 1rem;
 }
@@ -1068,6 +1081,11 @@ nav .container .menu-button span {
   }
   #contact-form .container .form-container form .form-element.message {
     grid-column: span 2;
+  }
+}
+@media (min-width: 560px) {
+  #contact-form .container {
+    margin-top: 90px;
   }
 }
 

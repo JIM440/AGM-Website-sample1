@@ -12,13 +12,16 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    background-color: $white;
+}
+
 img{
     max-width: 100%;
     vertical-align: middle;
-    vertical-align: middle;
 }
 
-button{
+a, button{
     cursor: pointer;
 }
 
@@ -32,4 +35,10 @@ textarea{
 }
 section{
     margin-bottom: 1.4rem;
+}
+
+@include breakpointDynamic (810px){
+    section{
+        margin-bottom: 4rem;
+    }
 }

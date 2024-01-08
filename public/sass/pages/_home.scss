@@ -1,5 +1,6 @@
 #hero {
-  margin-top: 3rem;
+  margin-top: 5rem;
+
 
   .hero-image {
     img {
@@ -23,6 +24,13 @@
     }
   }
 }
+
+@include breakpointDynamic(700px){
+  #hero{
+    margin-top: 6.2rem;
+  }
+}
+
 
 #intro {
   .even-columns {
@@ -211,6 +219,8 @@
   }
 }
 
+
+
 #featured-products {
   .product-container {
     display: flex;
@@ -243,6 +253,8 @@
     }
   }
 }
+
+
 
 #featured-videos {
   .container {
@@ -428,6 +440,9 @@
   }
 }
 
+
+
+
 #faqs-section {
   .container-faqs-section {
     .header {
@@ -495,3 +510,23 @@
     }
   }
 }
+
+// ========== =========    ========= =========
+// ========== =========    ========= =========
+// ==========   Other Home Paages   =========
+// ========== =========    ========= =========
+// ========== =========    ========= =========
+
+#articles{}
+
+
+
+#testimonies{}
+
+
+
+#salvation{}
+
+
+
+#singlearticle{}

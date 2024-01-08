@@ -1,23 +1,31 @@
 #social-container{
+
+    margin-bottom: 0;
     .container{
         margin-top:70px;
+        padding-bottom: 0px !important;
+
+
 
         &>div{
             display: flex;
-            gap: 1.2rem;                align-items: center;
+            gap: 0.6rem;                align-items: center;
             justify-content: center;
 
 
             a{
                 display: flex;
-                padding: 4px 10px;
+                padding: 4px 6px;
                 border-radius: 8px;
                 gap: 6px;
                 align-items: center;
 
                 i{
-                    font-size: 24px;
+                    font-size: 20px;
                     color: $white;
+                }
+                img{
+                    width: 25px;
                 }
             }
 
@@ -33,6 +41,13 @@
                 background-color: $ig-color2;
                 color: $white;
             }
+        }
+    }
+
+    
+    @include breakpointDynamic(560px){
+        .container{
+            margin-top: 90px;
         }
     }
 }
